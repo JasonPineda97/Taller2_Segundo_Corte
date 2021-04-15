@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="#2C2738"
+>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="325dp"
+            android:layout_height="590dp"
+            tools:context=".MainActivity"
+            android:background="@drawable/cuadro_fondo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+    >
+        <TextView
+                android:layout_marginTop="30dp"
+                android:text="Pantalla de registro"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:background="#FFFFFF"
+                android:textColor="#000000"
+                android:id="@+id/título"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@id/guideline4"
+                app:layout_constraintEnd_toStartOf="@id/guideline5"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                android:layout_width="0dp" android:gravity="center_horizontal"
+        />
+
+        <EditText
+                android:layout_marginTop="15dp"
+                android:hint="Nombre"
+                android:paddingLeft="10dp"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:id="@+id/nombre"
+                android:layout_height="40dp"
+                android:background="@drawable/cuadros_entrada"
+                app:layout_constraintStart_toStartOf="@id/guideline4"
+                app:layout_constraintEnd_toStartOf="@id/guideline5"
+                app:layout_constraintTop_toBottomOf="@+id/título"
+                android:layout_width="0dp"
+        />
+
+        <EditText
+                android:layout_marginTop="15dp"
+                android:hint="Apellido"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:paddingLeft="10dp"
+                android:id="@+id/apellido"
+                android:layout_height="40dp"
+                android:background="@drawable/cuadros_entrada"
+                app:layout_constraintStart_toStartOf="@id/guideline4"
+                app:layout_constraintEnd_toStartOf="@id/guideline5"
+                app:layout_constraintTop_toBottomOf="@+id/nombre"
+                android:layout_width="0dp"
+        />
+
+        <EditText
+                android:layout_marginTop="15dp"
+                android:hint="Documento"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:paddingLeft="10dp"
+                android:id="@+id/documento"
+                android:layout_height="40dp"
+                android:background="@drawable/cuadros_entrada"
+                app:layout_constraintStart_toStartOf="@id/guideline4"
+                app:layout_constraintEnd_toStartOf="@id/guideline5"
+                app:layout_constraintTop_toBottomOf="@+id/apellido"
+                android:layout_width="0dp"
+        />
+
+        <Button
+                android:paddingTop="15dp"
+                android:id="@+id/tipo_documento"
+                android:hint="Tipo de documento"
+                android:layout_marginTop="15dp"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:background="@drawable/cuadros_entrada"
+                android:layout_height="40dp"
+                android:textAlignment="viewStart"
+                android:paddingLeft="14dp"
+                app:layout_constraintStart_toStartOf="@id/guideline4"
+                app:layout_constraintEnd_toStartOf="@id/guideline5"
+                app:layout_constraintTop_toBottomOf="@+id/documento"
+                android:layout_width="0dp" android:gravity="center_horizontal"
+                tools:ignore="RtlCompat"
+        />
+
+        <Button
+                android:paddingTop="15dp"
+                android:id="@+id/fecha_nacimiento"
+                android:hint="Fecha de nacimiento"
+                android:layout_marginTop="15dp"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:background="@drawable/cuadros_entrada"
+                android:layout_height="40dp"
+                android:textAlignment="viewStart"
+                android:paddingLeft="14dp"
+                app:layout_constraintStart_toStartOf="@id/guideline4"
+                app:layout_constraintEnd_toStartOf="@id/guideline5"
+                app:layout_constraintTop_toBottomOf="@+id/tipo_documento"
+                android:layout_width="0dp" android:gravity="center_horizontal"
+                tools:ignore="RtlCompat"
+        />
+
+        <Button
+                android:paddingTop="15dp"
+                android:id="@+id/hobbies"
+                android:hint="Hobbies"
+                android:layout_marginTop="15dp"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:background="@drawable/cuadros_entrada"
+                android:layout_height="40dp"
+                android:textAlignment="viewStart"
+                android:paddingLeft="14dp"
+                app:layout_constraintStart_toStartOf="@id/guideline4"
+                app:layout_constraintEnd_toStartOf="@id/guideline5"
+                app:layout_constraintTop_toBottomOf="@+id/fecha_nacimiento"
+                android:layout_width="0dp" android:gravity="center_horizontal"
+                tools:ignore="RtlCompat"
+        />
+
+        <EditText
+                android:layout_marginTop="15dp"
+                android:hint="Contraseña"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:paddingLeft="10dp"
+                android:id="@+id/contraseña"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:background="@drawable/cuadros_entrada"
+                app:layout_constraintStart_toStartOf="@id/guideline4"
+                app:layout_constraintEnd_toStartOf="@id/guideline5"
+                app:layout_constraintTop_toBottomOf="@+id/hobbies"
+                android:layout_width="0dp"
+        />
+
+        <EditText
+                android:layout_marginTop="15dp"
+                android:hint="Coonfirmar contraseña"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:paddingLeft="10dp"
+                android:id="@+id/confirmar_contraseña"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:background="@drawable/cuadros_entrada"
+                app:layout_constraintStart_toStartOf="@id/guideline4"
+                app:layout_constraintEnd_toStartOf="@id/guideline5"
+                app:layout_constraintTop_toBottomOf="@+id/contraseña"
+                android:layout_width="0dp"
+        />
+
+        <Button
+                android:paddingTop="10dp"
+                android:id="@+id/boton_home"
+                android:layout_marginTop="28dp"
+                android:textSize="17sp"
+                android:textStyle="normal"
+                android:textAlignment="center"
+                android:background="@drawable/color_boton"
+                android:layout_height="50dp"
+                android:textColor="#FFFFFF"
+                android:text="Continuar"
+                app:layout_constraintStart_toStartOf="@id/guideline4"
+                app:layout_constraintEnd_toStartOf="@id/guideline5"
+                app:layout_constraintTop_toBottomOf="@+id/confirmar_contraseña"
+                android:layout_width="0dp" android:gravity="center_horizontal"
+        />
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.23"
+        />
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.77"
+        />
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5"
+        />
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.30"
+        />
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.13"
+        />
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.87"
+        />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:background="#2C2738"
+>
+
+        <TextView
+                android:layout_marginTop="100dp"
+                android:hint="Nombre"
+                android:paddingLeft="10dp"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:id="@+id/name"
+                android:layout_height="25dp"
+                android:background="@drawable/cuadros_entrada"
+                app:layout_constraintStart_toStartOf="@id/guideline4"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="80dp"
+        />
+
+        <TextView
+                android:layout_marginTop="100dp"
+                android:hint="Nombre"
+                android:paddingLeft="10dp"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:id="@+id/nom"
+                android:layout_height="25dp"
+                android:background="@drawable/cuadros_entrada"
+                app:layout_constraintStart_toEndOf="@id/name"
+                app:layout_constraintEnd_toStartOf="@id/guideline5"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="0dp"
+        />
+
+        <TextView
+                android:layout_marginTop="15dp"
+                android:hint="Apellido"
+                android:paddingLeft="10dp"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:id="@+id/apellido"
+                android:layout_height="25dp"
+                android:background="@drawable/cuadros_entrada"
+                app:layout_constraintStart_toStartOf="@id/guideline4"
+                app:layout_constraintTop_toBottomOf="@id/nom"
+                android:layout_width="84dp"
+        />
+
+        <TextView
+                android:layout_marginTop="15dp"
+                android:hint="Apellido"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:paddingLeft="10dp"
+                android:id="@+id/ape"
+                android:layout_height="25dp"
+                android:background="@drawable/cuadros_entrada"
+                app:layout_constraintStart_toEndOf="@id/apellido"
+                app:layout_constraintEnd_toStartOf="@id/guideline5"
+                app:layout_constraintTop_toBottomOf="@+id/nom"
+                android:layout_width="0dp"
+        />
+
+        <TextView
+                android:layout_marginTop="15dp"
+                android:hint="Documento"
+                android:paddingLeft="10dp"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:id="@+id/documento"
+                android:layout_height="25dp"
+                android:background="@drawable/cuadros_entrada"
+                app:layout_constraintStart_toStartOf="@id/guideline4"
+                app:layout_constraintTop_toBottomOf="@id/ape"
+                android:layout_width="90dp"
+        />
+
+        <TextView
+                android:layout_marginTop="15dp"
+                android:hint="Documento"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:paddingLeft="10dp"
+                android:id="@+id/doc"
+                android:layout_height="25dp"
+                android:background="@drawable/cuadros_entrada"
+                app:layout_constraintStart_toEndOf="@id/documento"
+                app:layout_constraintEnd_toStartOf="@id/guideline5"
+                app:layout_constraintTop_toBottomOf="@+id/ape"
+                android:layout_width="0dp"
+        />
+
+        <TextView
+                android:layout_marginTop="15dp"
+                android:hint="Tipo de documento"
+                android:paddingLeft="10dp"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:id="@+id/tipo_documento"
+                android:layout_height="25dp"
+                android:background="@drawable/cuadros_entrada"
+                app:layout_constraintStart_toStartOf="@id/guideline4"
+                app:layout_constraintTop_toBottomOf="@id/doc"
+                android:layout_width="143dp"
+        />
+
+        <TextView
+                android:layout_marginTop="15dp"
+                android:hint="Tipo documento"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:paddingLeft="10dp"
+                android:id="@+id/ti_doc"
+                android:layout_height="25dp"
+                android:background="@drawable/cuadros_entrada"
+                app:layout_constraintStart_toEndOf="@id/tipo_documento"
+                app:layout_constraintEnd_toStartOf="@id/guideline5"
+                app:layout_constraintTop_toBottomOf="@+id/doc"
+                android:layout_width="0dp"
+        />
+
+        <TextView
+                android:layout_marginTop="15dp"
+                android:hint="Fecha de nacimiento"
+                android:paddingLeft="10dp"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:id="@+id/fecha_nacimiento"
+                android:layout_height="25dp"
+                android:background="@drawable/cuadros_entrada"
+                app:layout_constraintStart_toStartOf="@id/guideline4"
+                app:layout_constraintTop_toBottomOf="@id/ti_doc"
+                android:layout_width="160dp"
+        />
+
+        <TextView
+                android:layout_marginTop="15dp"
+                android:hint="Fecha nacimiento"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:paddingLeft="10dp"
+                android:id="@+id/fe_nac"
+                android:layout_height="25dp"
+                android:background="@drawable/cuadros_entrada"
+                app:layout_constraintStart_toEndOf="@id/fecha_nacimiento"
+                app:layout_constraintEnd_toStartOf="@id/guideline5"
+                app:layout_constraintTop_toBottomOf="@+id/ti_doc"
+                android:layout_width="0dp"
+        />
+
+        <TextView
+                android:layout_marginTop="15dp"
+                android:hint="Hobbies"
+                android:paddingLeft="10dp"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:id="@+id/hobbies"
+                android:layout_height="25dp"
+                android:background="@drawable/cuadros_entrada"
+                app:layout_constraintStart_toStartOf="@id/guideline4"
+                app:layout_constraintEnd_toStartOf="@id/guideline5"
+                app:layout_constraintTop_toBottomOf="@id/fe_nac"
+                android:layout_width="0dp"
+        />
+
+        <TextView
+                android:layout_marginTop="15dp"
+                android:hint="Hobbies"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:paddingLeft="10dp"
+                android:id="@+id/hob"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cuadros_entrada"
+                app:layout_constraintStart_toStartOf="@id/guideline4"
+                app:layout_constraintEnd_toStartOf="@id/guideline5"
+                app:layout_constraintTop_toBottomOf="@+id/hobbies"
+                android:layout_width="0dp"
+        />
+
+        <TextView
+                android:layout_marginTop="15dp"
+                android:hint="Contraseña"
+                android:paddingLeft="10dp"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:id="@+id/contraseña"
+                android:layout_height="25dp"
+                android:background="@drawable/cuadros_entrada"
+                app:layout_constraintStart_toStartOf="@id/guideline4"
+                app:layout_constraintEnd_toStartOf="@id/guideline5"
+                app:layout_constraintTop_toBottomOf="@id/hob"
+                android:layout_width="0dp"
+        />
+
+        <TextView
+                android:layout_marginTop="15dp"
+                android:hint="Contraseña"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:paddingLeft="10dp"
+                android:id="@+id/con"
+                android:layout_height="25dp"
+                android:background="@drawable/cuadros_entrada"
+                app:layout_constraintStart_toStartOf="@id/guideline4"
+                app:layout_constraintEnd_toStartOf="@id/guideline5"
+                app:layout_constraintTop_toBottomOf="@+id/contraseña"
+                android:layout_width="0dp"
+        />
+
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5"
+        />
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.30"
+        />
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.10"
+        />
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.90"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
